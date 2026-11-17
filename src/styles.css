@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #25384b;
+  background: #f3f6f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; font-size: 15px; line-height: 1.5; background: #f3f6f9; }
+button, a { font: inherit; }
+a { -webkit-tap-highlight-color: transparent; }
+.eyebrow { margin: 0; color: #087dbb; font-size: 11px; font-weight: 700; letter-spacing: .08em; }

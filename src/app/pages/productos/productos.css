@@ -1,0 +1,28 @@
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 25px; }
+.heading h2 { margin: 7px 0 5px; color: #1e3449; font-size: 29px; line-height: 1.2; }
+.heading > div > p:last-child { margin: 0; color: #607286; font-size: 15px; }
+.count { padding: 9px 14px; border: 1px solid #d3e9f6; border-radius: 24px; background: #eaf5fc; color: #0875ad; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.filter-note { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: -8px 0 16px; padding: 12px 15px; border: 1px solid #dcebf4; border-radius: 10px; background: #f0f8fc; color: #52677b; font-size: 14px; }
+.filter-note strong { color: #20384e; }
+.filter-note a { color: #0878b1; font-weight: 700; text-decoration: none; }
+.filter-note a:hover { text-decoration: underline; }
+.panel { padding: 24px; overflow: hidden; border: 1px solid #e0e8ee; border-radius: 14px; background: #fff; box-shadow: 0 5px 18px rgb(32 57 78 / 5%); }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap; }
+th { padding: 14px 12px; border-bottom: 1px solid #e3eaf0; color: #627488; font-size: 11px; font-weight: 700; letter-spacing: .06em; }
+td { padding: 16px 12px; border-bottom: 1px solid #edf1f4; color: #506378; font-size: 14px; }
+tbody tr { transition: background .15s ease; }
+tbody tr:hover { background: #f7fbfd; }
+tbody tr:last-child td { border-bottom: 0; }
+.item { display: flex; align-items: center; gap: 11px; color: #2c4258; }
+.item strong { font-size: 14px; font-weight: 600; }
+.product-icon { display: grid; width: 36px; height: 36px; flex: none; place-items: center; border-radius: 10px; font-size: 10px; font-style: normal; font-weight: 700; }
+.product-icon.blue { background: #e8f4fb; color: #087bb7; }
+.product-icon.orange { background: #fff1e3; color: #bb681b; }
+.product-icon.pink { background: #fcebf0; color: #ba4e6b; }
+.product-icon.purple { background: #efedfb; color: #6452ad; }
+.product-icon.green { background: #e6f5ed; color: #267c51; }
+.product-icon.yellow { background: #fff7dc; color: #997100; }
+.badge { display: inline-block; padding: 6px 10px; border-radius: 20px; background: #e8f6ee; color: #28784d; font-size: 11px; font-weight: 600; }
+.badge.low { background: #fff1e5; color: #a95712; }
+@media (max-width: 600px) { .heading { align-items: flex-start; } .heading h2 { font-size: 25px; } .panel { padding: 15px; } td { padding: 13px 10px; } }

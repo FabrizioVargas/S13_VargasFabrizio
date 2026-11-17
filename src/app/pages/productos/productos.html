@@ -1,0 +1,36 @@
+<div class="heading">
+  <div>
+    <p class="eyebrow">CATÁLOGO</p>
+    <h2>Productos</h2>
+    <p>Los artículos que tenemos disponibles en la tienda.</p>
+  </div>
+  <span class="count">{{ productosVisibles.length }} productos</span>
+</div>
+
+@if (categoriaActiva) {
+  <div class="filter-note">
+    <span>Mostrando la categoría <strong>{{ categoriaActiva }}</strong></span>
+    <a routerLink="/productos">Ver todos</a>
+  </div>
+}
+
+<section class="panel">
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>PRODUCTO</th><th>CATEGORÍA</th><th>PRECIO</th><th>UNIDADES</th><th>ESTADO</th></tr>
+      </thead>
+      <tbody>
+        @for (producto of productosVisibles; track producto.nombre) {
+          <tr>
+            <td><span class="item"><i [class]="'product-icon '+producto.color">{{ producto.iniciales }}</i><strong>{{ producto.nombre }}</strong></span></td>
+            <td>{{ producto.categoria }}</td>
+            <td>S/ {{ producto.precio.toFixed(2) }}</td>
+            <td>{{ producto.stock }}</td>
+            <td><span [class]="producto.stock < 5 ? 'badge low' : 'badge'">{{ producto.stock < 5 ? 'Quedan pocos' : 'Disponible' }}</span></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<div class="layout">
+  <aside class="sidebar">
+    <a class="brand" routerLink="/" aria-label="Ir al inicio"><span class="brand-mark">T</span><span><strong>Tienda de productos</strong><small>Panel de administración</small></span></a>
+    <div class="menu-label">MENÚ</div>
+    <nav aria-label="Navegación principal">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><span>⌂</span>Inicio</a>
+      <a routerLink="/productos" routerLinkActive="active"><span>▦</span>Productos</a>
+      <a routerLink="/categorias" routerLinkActive="active"><span>◇</span>Categorías</a>
+      <a routerLink="/inventario" routerLinkActive="active"><span>▤</span>Inventario</a>
+    </nav>
+    <div class="sidebar-note"><span class="status-dot"></span>Datos de ejemplo<br><small>Actualizado hoy</small></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div><span class="eyebrow">ADMINISTRACIÓN</span><h1>Tienda de productos</h1></div><div class="user-chip"><span class="avatar">F</span><span><strong>Fabrizio</strong><small>Administrador</small></span></div></header>
+    <section class="page-content"><router-outlet /></section>
+    <footer>Tienda de productos <span>·</span> Panel de administración</footer>
+  </main>
+</div>

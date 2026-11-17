@@ -1,0 +1,13 @@
+.heading { margin-bottom: 25px; }
+.heading h2 { margin: 7px 0 5px; color: #1e3449; font-size: 29px; line-height: 1.2; }
+.heading > p:last-child { margin: 0; color: #607286; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.card { display: flex; min-height: 112px; align-items: center; gap: 16px; padding: 23px; border: 1px solid #e0e8ee; border-radius: 14px; background: #fff; box-shadow: 0 5px 18px rgb(32 57 78 / 5%); color: inherit; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+.card:hover { transform: translateY(-2px); border-color: #bfdeef; box-shadow: 0 9px 22px rgb(32 57 78 / 9%); }
+.card:focus-visible { outline: 3px solid #168bc5; outline-offset: 3px; }
+.icon { display: grid; width: 46px; height: 46px; flex: none; place-items: center; border-radius: 13px; background: #e8f4fb; color: #087bb7; font-size: 24px; }
+.card-copy { display: grid; gap: 5px; }
+.card-copy strong { color: #2c4258; font-size: 17px; }
+.card-copy small { color: #65778a; font-size: 14px; }
+.arrow { margin-left: auto; color: #087bb7; font-size: 20px; }
+@media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }

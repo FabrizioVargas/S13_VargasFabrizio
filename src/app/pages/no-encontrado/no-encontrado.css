@@ -1,0 +1,6 @@
+.not-found { margin-top: 35px; padding: 60px 24px; border: 1px solid #e0e8ee; border-radius: 14px; background: #fff; box-shadow: 0 5px 18px rgb(32 57 78 / 5%); text-align: center; }
+.not-found > span { color: #087bb7; font-size: 48px; font-weight: 700; }
+.not-found h2 { color: #263d52; font-size: 23px; }
+.not-found p { color: #607286; font-size: 15px; }
+.not-found a { display: inline-flex; margin-top: 13px; padding: 12px 17px; border-radius: 9px; background: #087eb8; color: #fff; font-size: 14px; font-weight: 600; text-decoration: none; }
+.not-found a:hover { background: #066b9d; }
