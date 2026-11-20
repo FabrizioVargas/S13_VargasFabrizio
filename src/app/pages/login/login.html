@@ -1,0 +1,19 @@
+<main class="login-page">
+  <section class="login-showcase">
+    <a routerLink="/login" class="brand" aria-label="Tienda de productos"><span class="brand-mark">T</span><span><strong>Tienda de productos</strong><small>Panel de administración</small></span></a>
+    <div class="showcase-copy"><span class="eyebrow">TIENDA DE PRODUCTOS</span><h1>Panel de<br><span>administración.</span></h1><p>Accede a productos, categorías e inventario desde tu cuenta.</p></div>
+  </section>
+  <section class="login-side"><div class="login-card">
+    <span class="eyebrow">QUÉ BUENO TENERTE AQUÍ</span><h2>Inicia sesión</h2><p class="login-intro">Ingresa tus datos para continuar al panel.</p>
+    <form (ngSubmit)="submit()" #loginForm="ngForm">
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" [(ngModel)]="email" placeholder="nombre@ejemplo.com" autocomplete="username" required email />
+      <label for="password">Contraseña</label>
+      <input id="password" name="password" type="password" [(ngModel)]="password" placeholder="Ingresa tu contraseña" autocomplete="current-password" required />
+      @if (error()) { <div class="form-error" role="alert"><span aria-hidden="true">!</span>{{ error() }}</div> }
+      <button class="submit-button" type="submit">Ingresar <span aria-hidden="true">→</span></button>
+    </form>
+    <div class="demo-note"><strong>Acceso</strong><span>Correo: fabrizio@gmail.com</span><span>Contraseña: 12345678</span></div>
+    <div class="secure-note"><span aria-hidden="true">▣</span> Inicio de sesión protegido</div>
+  </div></section>
+</main>
